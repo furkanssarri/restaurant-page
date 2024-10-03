@@ -429,7 +429,7 @@ footer .credentials a:hover {
 @media (min-width: 1200px) {
 
    #content {
-      min-height: 64vh;
+      min-height: 60vh;
       margin: 2%;
    }
 }
