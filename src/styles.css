@@ -353,6 +353,7 @@ footer nav ul li {
    display: flex;
    margin: 5px;
    padding: 10px;
+   cursor: pointer;
 }
 
 footer .credentials {
@@ -383,13 +384,13 @@ footer .credentials a:hover {
    }
 
    #content {
-      min-height: 75vh;
+      min-height: 74vh;
    }
 
    .home-page-main {
       background-image: none;
       color: black;
-      max-width: 55vw;
+      max-width: 50vw;
    }
    
 
