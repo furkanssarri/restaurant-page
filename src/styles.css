@@ -296,12 +296,18 @@ section article p {
    transition: transform 0.3s ease;
 }
 
-.cell h6 {
+.cell div {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.cell div h6 {
    font-family: LandingH1, sans-serif;
 
 }
 
-.cell p {
+.cell div p {
    font-family: LandingPara, sans-serif;
    color: #848181;
    font-size: 0.8em;

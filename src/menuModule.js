@@ -17,7 +17,7 @@ export const menuModule = function () {
          price: `$5`,
       },
       {
-         name: "Quattro Formaggi Pizza",
+         name: "Quattro Formaggi",
          ingredients: ["mozarella", "gorgonzola", "parmigiano-reggiano"],
          img: quattroFromaggiPic,
          price: `$5`,
@@ -47,6 +47,7 @@ export const menuModule = function () {
       const productName = document.createElement("h6");
       const productDesc = document.createElement("p");
       const priceTag = document.createElement("span");
+      const seperator = document.createElement("div");
       const productImg = document.createElement("img");
       cell.classList.add("cell", "menu");
       productDesc.classList.add("ingredients");
@@ -55,10 +56,11 @@ export const menuModule = function () {
       productName.textContent = element.name;
       productDesc.textContent = element.ingredients.join(", ");
       priceTag.textContent = element.price;
+      seperator.appendChild(productName);
+      seperator.appendChild(productDesc);
+      seperator.appendChild(priceTag);
       cell.appendChild(productImg);
-      cell.appendChild(productName);
-      cell.appendChild(productDesc);
-      cell.appendChild(priceTag);
+      cell.appendChild(seperator);
       newMain.appendChild(cell);
    });
 
